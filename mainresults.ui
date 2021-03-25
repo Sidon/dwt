@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1147</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QFrame" name="frame_dataset">
+       <property name="accessibleName">
+        <string>Dataset</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Dataset</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Resultados</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTableView" name="tbResults"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QFrame" name="frame_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="5" column="0">
+            <widget class="QLineEdit" name="leResultFile"/>
+           </item>
+           <item row="6" column="0" colspan="2">
+            <widget class="QFrame" name="frame_7">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>125</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="btexportar">
+                <property name="toolTip">
+                 <string>Chama a tela de edição</string>
+                </property>
+                <property name="text">
+                 <string>Exportar CSV</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="btfiltrar">
+                <property name="toolTip">
+                 <string>Apresenta os dados na parte inferior desta &quot;tela&quot;</string>
+                </property>
+                <property name="text">
+                 <string>Filtrar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="btencerrar">
+                <property name="toolTip">
+                 <string>Calcula resultados com redutores Anova+Percentil</string>
+                </property>
+                <property name="text">
+                 <string>Encerrar</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Arquivo de saida</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_4">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QGroupBox" name="gbwave">
+            <property name="title">
+             <string>Wavelet</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QCheckBox" name="cbdw">
+               <property name="text">
+                <string>DWT</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cbswt">
+               <property name="text">
+                <string>SWT</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="gbwmae">
+            <property name="title">
+             <string>Wave Mae</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QCheckBox" name="cbdb8">
+               <property name="text">
+                <string>DB8</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cbbio31">
+               <property name="text">
+                <string>BIOR31</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="gbsubbanda">
+            <property name="title">
+             <string>Subbanda</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QCheckBox" name="cbaproximacao">
+               <property name="text">
+                <string>Aproximação</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cbverticais">
+               <property name="text">
+                <string>Verticais</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cborizontais">
+               <property name="text">
+                <string>Horizontais</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cddiagonais">
+               <property name="text">
+                <string>Diagonais</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="gbdelta">
+         <property name="title">
+          <string>Delta (Significancia)</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QCheckBox" name="cb09">
+            <property name="text">
+             <string>0.9</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cb05">
+            <property name="text">
+             <string>0.5</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cb02">
+            <property name="text">
+             <string>0.2</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cb005">
+            <property name="text">
+             <string>0.05</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cb001">
+            <property name="text">
+             <string>0.01</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QGroupBox" name="gbmetricas">
+            <property name="title">
+             <string>Metrica</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QCheckBox" name="cbacuracia">
+               <property name="text">
+                <string>Acuracia</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cdsensibilidade">
+               <property name="text">
+                <string>Sensibilidade</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cbdesvio">
+               <property name="text">
+                <string>Desvio</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cbf1_2">
+               <property name="text">
+                <string>Precisão</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cbf1">
+               <property name="text">
+                <string>F1</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1147</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatasets">
+    <property name="title">
+     <string>Datasets</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actIncluiDataset"/>
+    <addaction name="actBrowseds"/>
+   </widget>
+   <widget class="QMenu" name="menuUtils">
+    <property name="title">
+     <string>Utils</string>
+    </property>
+    <addaction name="actToGray"/>
+    <addaction name="actToHSV"/>
+    <addaction name="actSplitRGB"/>
+    <addaction name="actrgb2hsv"/>
+    <addaction name="actCalcAtributos"/>
+   </widget>
+   <addaction name="menuDatasets"/>
+   <addaction name="menuUtils"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actIncluiDataset">
+   <property name="text">
+    <string>Inclusao</string>
+   </property>
+  </action>
+  <action name="actBrowseds">
+   <property name="text">
+    <string>Bowse</string>
+   </property>
+  </action>
+  <action name="actIncluiExp">
+   <property name="text">
+    <string>Inclusao</string>
+   </property>
+  </action>
+  <action name="actBrowseExp">
+   <property name="text">
+    <string>Resultados</string>
+   </property>
+  </action>
+  <action name="actrgb2hsv">
+   <property name="text">
+    <string>Tracking Color (Red and Blue)</string>
+   </property>
+  </action>
+  <action name="actSplitRGB">
+   <property name="text">
+    <string>Split RGB</string>
+   </property>
+  </action>
+  <action name="actToGray">
+   <property name="text">
+    <string>Convert to gray</string>
+   </property>
+  </action>
+  <action name="actToHSV">
+   <property name="text">
+    <string>Convert to HSV</string>
+   </property>
+  </action>
+  <action name="actCalcAtributos">
+   <property name="text">
+    <string>Calc Atributos Subbandas</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tbResults</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

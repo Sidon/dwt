@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QSplitter" name="splitter_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QFrame" name="frame_dataset">
+         <property name="accessibleName">
+          <string>Dataset</string>
+         </property>
+         <property name="accessibleDescription">
+          <string>Dataset</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>Datasets</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableView" name="tbDatasets"/>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="4" column="0" colspan="2">
+              <widget class="QLineEdit" name="leIDDataset"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="lbDataset">
+               <property name="text">
+                <string>ID Dataset</string>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="0">
+              <widget class="QLineEdit" name="leResultFile"/>
+             </item>
+             <item row="14" column="0" colspan="2">
+              <widget class="QFrame" name="frame_7">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="0" column="0">
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>125</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="btEditarDataset">
+                  <property name="toolTip">
+                   <string>Chama a tela de edição</string>
+                  </property>
+                  <property name="text">
+                   <string>Editar</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="btCarregarDataset">
+                  <property name="toolTip">
+                   <string>Apresenta os dados na parte inferior desta &quot;tela&quot;</string>
+                  </property>
+                  <property name="text">
+                   <string>Carregar</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="8">
+                 <widget class="QPushButton" name="btResult1">
+                  <property name="toolTip">
+                   <string>Tabulação dos resultados para SQL</string>
+                  </property>
+                  <property name="text">
+                   <string>RSQL1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <widget class="QPushButton" name="btRH5Full">
+                  <property name="toolTip">
+                   <string>Resultados sem redutores em aquivo H5</string>
+                  </property>
+                  <property name="text">
+                   <string>RH5Full</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QPushButton" name="btGerarDataset">
+                  <property name="toolTip">
+                   <string>Gera os datasets (wavelet)</string>
+                  </property>
+                  <property name="text">
+                   <string>Dataset</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="6">
+                 <widget class="QPushButton" name="btConfusaof">
+                  <property name="text">
+                   <string>Conf Full</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="5">
+                 <widget class="QPushButton" name="btRH5Reduct">
+                  <property name="toolTip">
+                   <string>Calcula resultados com redutores Anova+Percentil</string>
+                  </property>
+                  <property name="text">
+                   <string>RH5Reduct</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="7">
+                 <widget class="QPushButton" name="btConfusaoa">
+                  <property name="text">
+                   <string>Conf Anova</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Descricao</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0" colspan="2">
+              <widget class="QLineEdit" name="leImagens"/>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Imagens (Path)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="0" colspan="2">
+              <widget class="QLineEdit" name="leDatasetOutput"/>
+             </item>
+             <item row="8" column="0" colspan="2">
+              <widget class="QLineEdit" name="leDescricaoDataset"/>
+             </item>
+             <item row="12" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Arquivo de resultados</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Arquivo de subbandas</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatasets">
+    <property name="title">
+     <string>Datasets</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actIncluiDataset"/>
+    <addaction name="actBrowseds"/>
+   </widget>
+   <widget class="QMenu" name="menuUtils">
+    <property name="title">
+     <string>Utils</string>
+    </property>
+    <addaction name="actToGray"/>
+    <addaction name="actToHSV"/>
+    <addaction name="actSplitRGB"/>
+    <addaction name="actrgb2hsv"/>
+    <addaction name="actCalcAtributos"/>
+   </widget>
+   <addaction name="menuDatasets"/>
+   <addaction name="menuUtils"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actIncluiDataset">
+   <property name="text">
+    <string>Inclusao</string>
+   </property>
+  </action>
+  <action name="actBrowseds">
+   <property name="text">
+    <string>Bowse</string>
+   </property>
+  </action>
+  <action name="actIncluiExp">
+   <property name="text">
+    <string>Inclusao</string>
+   </property>
+  </action>
+  <action name="actBrowseExp">
+   <property name="text">
+    <string>Resultados</string>
+   </property>
+  </action>
+  <action name="actrgb2hsv">
+   <property name="text">
+    <string>Tracking Color (Red and Blue)</string>
+   </property>
+  </action>
+  <action name="actSplitRGB">
+   <property name="text">
+    <string>Split RGB</string>
+   </property>
+  </action>
+  <action name="actToGray">
+   <property name="text">
+    <string>Convert to gray</string>
+   </property>
+  </action>
+  <action name="actToHSV">
+   <property name="text">
+    <string>Convert to HSV</string>
+   </property>
+  </action>
+  <action name="actCalcAtributos">
+   <property name="text">
+    <string>Calc Atributos Subbandas</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tbDatasets</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
